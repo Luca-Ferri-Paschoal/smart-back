@@ -12,7 +12,13 @@ const Container = styled.div`
 const Conteudo = styled.section`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export default () => {
@@ -20,6 +26,9 @@ export default () => {
     <Container>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
+        <Conta />
+        <Conta />
+        <Conta />
         <Conta />
       </Conteudo>
     </Container>
