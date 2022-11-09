@@ -3,16 +3,20 @@ import styled from "styled-components";
 
 import Titulo from "../Titulo";
 import Conta from "../Conta";
+import Extrato from "../Extrado";
 
-const Container = styled.div`
-  background-color: 
-    ${ ({ theme }) => theme.body }
-  ;
+const DivPrincipal = styled.div`
+  background-color: #f1f1f1;
   padding: 20px;
-  color:
-    ${ ({ theme }) => theme.text }
-  ;
+  height: 90vh;
 
+  @media (max-width: 800px) {
+    height: unset;
+  }
+
+  @media (max-height: 700px) {
+    height: unset;
+  }
 `;
 
 const Conteudo = styled.section`
@@ -27,16 +31,16 @@ const Conteudo = styled.section`
   }
 `;
 
-export default () => {
+const Container = () => {
   return (
-    <Container>
+    <DivPrincipal>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
-        <Conta />
-        <Conta />
-        <Conta />
+        <Extrato />
       </Conteudo>
-    </Container>
+    </DivPrincipal>
   );
 };
+
+export default Container;

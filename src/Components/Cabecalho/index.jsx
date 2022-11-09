@@ -7,8 +7,13 @@ const StyledHeader = styled.nav`
   background-color: ${corPrimaria};
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  height: 10vh;
   align-items: center;
+
+  @media (max-height: 700px) {
+    height: unset;
+    padding: 20px;
+  }
 `;
 
 const Logo = styled.img`
