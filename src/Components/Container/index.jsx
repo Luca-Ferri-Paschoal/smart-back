@@ -5,8 +5,14 @@ import Titulo from "../Titulo";
 import Conta from "../Conta";
 
 const Container = styled.div`
-  background-color: #f1f1f1;
+  background-color: 
+    ${ ({ theme }) => theme.body }
+  ;
   padding: 20px;
+  color:
+    ${ ({ theme }) => theme.text }
+  ;
+
 `;
 
 const Conteudo = styled.section`
