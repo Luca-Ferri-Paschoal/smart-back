@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Titulo from "../Titulo";
 import Conta from "../Conta";
-import Extrato from "../Extrado";
+import Extrato from "../Extrato";
 
 const DivPrincipal = styled.div`
   height: 90vh;
